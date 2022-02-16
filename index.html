@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script.js" defer></script>
+    <link rel = "stylesheet" href= "style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "title">ETCH-A-SKETCH</div>
+    <div class = "main">    
+        <div class = "control">
+            <input id = "slider" type = "range" min="1" max="64" value="15">
+            <div id = "sliderValue"></div>
+            <button id = "confirmValue">OK</button>
+            <button id = "resetButton">RESET</button>
+            <div><input type = "radio" id = "colorRadio" name = "color" value = "colorRadio" checked="checked"><label for = "colorRadio">Color</label></div>
+            <div><input type = "radio" id = "rgbRadio" name = "color" value = "rgbRadio"><label for = "rgbRadio">RGB</label> </div>
+            <div><input type = "radio" id = "greyRadio" name = "color" value = "greyRadio"><label for = "greyRadio">Grey</label> </div>
+
+            <input id = "color" type = "color" value = "rgb(0, 0, 0)">
+        </div>
+        <div class = "container"></div>
+    </div>
+</body>
+</html>

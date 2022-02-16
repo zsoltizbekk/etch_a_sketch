@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(218, 205, 205);
+    font-family: Consolas, monaco, monospace;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+#title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.control {
+    display: grid;
+    margin-top: 20px;
+    grid-template-areas: 
+    "slider" 
+    "sliderValue"
+    "confirmValue"
+    "resetButton"  
+    "color"
+    "RGB"
+    "colorRadio";
+    align-self:flex-start;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.container {
+    background-color: white;
+    margin-top: 20px;
+    width: 70vh;
+    height: 70vh;
+    border: 2px rgb(51, 51, 51) solid;
+    border-radius: 0.5vh;
+    display: grid;
+    gap: 0px, 0px;
+    align-self: center;
+}
+
+.pixel {
+    border-radius: 0.3vh;
+    border: 0.1vh solid rgb(233, 233, 233);
+}
+
+#slider {
+    grid-area: slider;
+}
+#sliderValue {
+    grid-area: sliderValue;
+    text-align: center;
+}
+#confirmValue {
+    grid-area: confirmValue;
+}
+#resetButton {
+    grid-area: resetButton;
+}
+#RGB {
+    grid-area: RGB;
+}
+#color {
+    grid-area: color;
+    width: auto;
+}
+
+#colorRadio {
+    grid-area: colorRadio;
+}
+
+button {
+    border-radius: 0.5vh;
+    width: auto;
+    font-family: Consolas, monaco, monospace;
+}
+button:hover {
+    background-color: rgb(197, 197, 197);
+}
